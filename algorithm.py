@@ -1,7 +1,5 @@
 """
-Primary algorithm for k-Means clustering
-
-This file contains the Algorithm class for performing k-means clustering.
+Algorithm for k-Means clustering
 """
 import math
 import random
@@ -19,7 +17,7 @@ def valid_seeds(value, size):
     Parameter valud: a value to check
     Precondition: value can be anything
 
-    Paramater size: The database size
+    Parameter size: The database size
     Precondition: size is an int > 0
     """
     assert type(size) == int and size > 0
@@ -43,12 +41,6 @@ class Algorithm(object):
     The method step() performs one step of the calculation.  The method run() will
     continue the calculation until it converges (or reaches a maximum number of steps).
     """
-    # IMMUTABLE ATTRIBUTES (Fixed after initialization with no DIRECT access)
-    # Attribute _dataset: The Dataset for this algorithm
-    # Invariant: _dataset is an instance of Dataset
-    #
-    # Attribute _cluster: The clusters to use at each step
-    # Invariant: _cluster is a non-empty list of Cluster instances
 
     def getClusters(self):
         """
