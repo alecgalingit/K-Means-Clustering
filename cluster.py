@@ -1,8 +1,5 @@
 """
-Cluster class for k-Means clustering
-
-This file contains the class cluster, which is the second part of the assignment.  With
-this class done, the visualization can display the centroid of a single cluster.
+Module representing a cluster for K-Means clustering.
 """
 import math
 import random
@@ -25,20 +22,6 @@ class Cluster(object):
     the centroid is generally not a point in the dataset, but rather is usually in between
     the data points.)
     """
-    # IMMUTABLE ATTRIBUTES (Fixed after initialization with no DIRECT access)
-    # Attribute _dataset: The Dataset for this cluster
-    # Invariant: _dataset is an instance of Dataset
-    #
-    # Attribute _centroid: The centroid of this cluster
-    # Invariant: _centroid is a point (tuple of int/float) whose length is equal to
-    # to the dimension of _dataset.
-    #
-    # MUTABLE ATTRIBUTES (Can be changed at any time, via addIndex, or clear)
-    # Attribute _indices: the indices of this cluster's points in the dataset
-    # Invariant: _indices is a list of ints. For each element ind in _indices,
-    # 0 <= ind < _dataset.getSize()
-
-    # Part A
     def getIndices(self):
         """
         Returns the indices of points in this cluster
