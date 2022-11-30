@@ -1,9 +1,5 @@
 """
-Dataset for k-Means clustering
-
-This file contains the class Dataset, which is the very first part of the assignment.
-You cannot do anything in this assignment (except run the unit test) before this class
-is finished.
+Module representing a dataset for K-Means Clustering.
 """
 import math
 import random
@@ -50,8 +46,6 @@ def is_point_list(value):
 
     return okay
 
-
-# CLASSES FOR THE ASSIGNMENT
 class Dataset(object):
     """
     A class representing a dataset for k-means clustering.
@@ -63,14 +57,6 @@ class Dataset(object):
     (e.g. in the methods of class Cluster or KMeans). Instead, this class has getter and
     setter style methods (with the appropriate preconditions) for modifying these values.
     """
-    # IMMUTABLE ATTRIBUTES (Fixed after initialization)
-    # Attribute _dimension: The point dimension for this dataset
-    # Invariant: _dimension is an int > 0.
-    #
-    # MUTABLE ATTRIBUTES (Can be changed at any time, via addPoint)
-    # Attribute _contents:  The dataset contents
-    # Invariant: _contents is a list of tuples of numbers (float or int), possibly empty.
-    # Each element of _contents is a tuple of size _dimension
 
     # Getters for encapsulated attributes
     def getDimension(self):
